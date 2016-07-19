@@ -1,0 +1,15 @@
+{
+  "name": "ngChat",
+  "dependencies": {},
+  "globalDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160709055139",
+    "angular-translate": "registry:dt/angular-translate#2.4.0+20160619081544",
+    "angular-ui-router": "registry:dt/angular-ui-router#1.1.5+20160707113237",
+    "core-js": "registry:dt/core-js#0.0.0+20160602141332"
+  },
+  "globalDevDependencies": {
+    "angular-mocks": "registry:dt/angular-mocks#1.5.0+20160608104721",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "node": "registry:dt/node#6.0.0+20160709114037"
+  }
+}

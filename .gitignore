@@ -1,0 +1,14 @@
+### Dependencies
+
+node_modules/
+typings/
+npm-debug.log
+
+### Builds
+
+/public
+/dist
+
+### IDE files
+
+.idea
