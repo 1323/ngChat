@@ -1,4 +1,4 @@
-const webpackTestConfig = require('./webpack.test')
+const webpackTestConfig = require('./webpack.test');
 const config = require('./config');
 
 const karmaConfig = function (karma) {
@@ -15,10 +15,10 @@ const karmaConfig = function (karma) {
     reporters: ['mocha'],
     port: 9876,
     colors: false,
-    logLevel: config.LOG_INFO,
+    logLevel: karma.LOG_INFO,
     autoWatch: true,
     autoWatchBatchDelay: 300,
-    browsers: ['PhantomJS'],
+    browsers: ['PhantomJS']
   })
 };
 
