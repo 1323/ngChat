@@ -4,5 +4,4 @@ import {Component} from '../../core/annotations';
     template: require('./chat.html')
 })
 export default class ChatPageComponent {
-
 }

@@ -1,4 +1,4 @@
-angular.module('app.routing')
+angular.module('chat.routing')
     .config(($stateProvider: angular.ui.IStateProvider) => {
         'ngInject';
 

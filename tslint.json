@@ -73,13 +73,6 @@
     "radix": true,
     "semicolon": [false],
     "switch-default": true,
-    "trailing-comma": [
-      true,
-      {
-        "multiline": "always",
-        "singleline": "never"
-      }
-    ],
     "triple-equals": [
       true,
       "allow-null-check"

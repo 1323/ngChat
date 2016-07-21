@@ -1,5 +1,5 @@
 const routingModule = angular
-    .module('app.routing', [])
+    .module('chat.routing', [])
     .config(
         (
             $stateProvider: angular.ui.IStateProvider,
@@ -29,7 +29,6 @@ const routingModule = angular
                         }
                     }
                 });
-
 
             $urlRouterProvider.when('', '/')
         })

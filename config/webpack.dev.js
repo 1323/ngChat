@@ -13,6 +13,8 @@ module.exports = webpackMerge(commonConfig, {
         outputPath: config.paths.public,
         historyApiFallback: true,
         compress: true,
+        inline: true,
+        hot: true,
         port: config.port
     },
     plugins: [

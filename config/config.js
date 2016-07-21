@@ -13,5 +13,10 @@ module.exports = {
         'dist': 'dist'
     },
     jsBundleName: '[name]-[hash].bundle.js',
-    cssBundleName: '[name]-[hash].css'
+    cssBundleName: '[name]-[hash].css',
+    sortChunks(chunks) {
+        return (a,b) => {
+            return chunks.indexOf(a.names[0]) - chunks.indexOf(b.names[0])
+        }
+    }
 };
