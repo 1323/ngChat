@@ -6,19 +6,36 @@ const karmaConfig = function (karma) {
     basePath: config.paths.app,
     frameworks: ['jasmine'],
     files: [
-      'spec.ts',
-      '**/*.spec.ts'
+        '**/*.spec.ts'
     ],
-    preprocessors: { '**/*.ts': ['webpack', 'sourcemap'] },
+    preprocessors: {
+        '**/*.ts': ['coverage', 'webpack', 'sourcemap']
+    },
     webpack: webpackTestConfig,
     webpackServer: { noInfo: true },
-    reporters: ['mocha'],
+    reporters: ['mocha', 'coverage'],
     port: 9876,
     colors: false,
     logLevel: karma.LOG_INFO,
-    autoWatch: true,
+    autoWatch: false,
     autoWatchBatchDelay: 300,
-    browsers: ['PhantomJS']
+    browsers: ['PhantomJS'],
+    coverageReporter: {
+        reporters: [{
+            type: 'text-summary'
+        }]
+    },
+    plugins: [
+        require('karma-sourcemap-loader'),
+        require('karma-phantomjs-launcher'),
+        require('karma-chrome-launcher'),
+        require('karma-firefox-launcher'),
+        require('karma-safari-launcher'),
+        require('karma-webpack'),
+        require('karma-jasmine'),
+        require('karma-mocha-reporter'),
+        require('karma-coverage')
+    ]
   })
 };
 

@@ -17,7 +17,7 @@ module.exports = {
             './**/**.scss'
             //register 3rd party styles here
 
-        ], config.paths.app)
+        ], { cwd: config.paths.app})
     },
     output: {
         filename: config.jsBundleName,
@@ -25,7 +25,7 @@ module.exports = {
     },
     resolve: {
         extensions: ['', '.js', '.ts'],
-        root: config.paths.app,
+        root: config.paths.root,
         modulesDirectories: ['node_modules']
     },
     module : {

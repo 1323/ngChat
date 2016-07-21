@@ -1,19 +1,17 @@
 const path = require('path');
 
-const config = {
+module.exports = {
     port: 4000,
     paths: {
-        public: path.join(__dirname, 'public'),
-        dist: path.join(__dirname, 'dist'),
-        app: path.join(__dirname, 'app'),
-        root: __dirname
+        'public': path.resolve(__dirname, '../public'),
+        'dist': path.resolve(__dirname, '../dist'),
+        'app': path.resolve(__dirname, '../app'),
+        'root': path.resolve(__dirname, '../')
     },
     dirs: {
-        public: 'public',
-        dist: 'dist'
+        'public': 'public',
+        'dist': 'dist'
     },
     jsBundleName: '[name]-[hash].bundle.js',
     cssBundleName: '[name]-[hash].css'
 };
-
-module.export = config;

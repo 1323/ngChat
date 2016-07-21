@@ -22,7 +22,7 @@ const routingModule = angular
                         isRecognided: () => {
                             return false;
                         },
-                        controller: (isRecognided, $state) => {
+                        controller: (isRecognided: boolean, $state: ng.ui.IStateService) => {
                             'ngInject';
 
                             $state.go('app.unrecognized');
@@ -32,6 +32,7 @@ const routingModule = angular
 
 
             $urlRouterProvider.when('', '/')
-        });
+        })
+    .name;
 
 export default routingModule;
