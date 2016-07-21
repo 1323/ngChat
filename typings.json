@@ -2,7 +2,7 @@
   "name": "ngChat",
   "dependencies": {},
   "globalDependencies": {
-    "angular": "registry:dt/angular#1.5.0+20160709055139",
+    "angular": "registry:dt/angular#1.5.0+20160720071806",
     "angular-translate": "registry:dt/angular-translate#2.4.0+20160619081544",
     "angular-ui-router": "registry:dt/angular-ui-router#1.1.5+20160707113237",
     "core-js": "registry:dt/core-js#0.0.0+20160602141332",
