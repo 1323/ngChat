@@ -1,7 +1,8 @@
 import unrecognizedPageComponent from './unrecognized.component';
+import './unrecognized.route';
 
 const unrecognizedPageModule = angular
-    .module('app.pages.unrecognized', [])
+    .module('chat.pages.unrecognized', [])
     .component('unrecognizedPage', unrecognizedPageComponent)
     .name;
 

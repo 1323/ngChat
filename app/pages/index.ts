@@ -2,9 +2,10 @@ import chatPageModule from './chat';
 import unrecognizedPageModule from './unrecognized';
 
 const pagesModule = angular
-    .module('app.pages', [
+    .module('chat.pages', [
         chatPageModule,
         unrecognizedPageModule
-    ]);
+    ])
+    .name;
 
 export default pagesModule;

@@ -1,7 +1,7 @@
 import contactsComponent from './contacts.component';
 
 const contactsComponentModule = angular
-    .module('app.components.contacts', [])
+    .module('chat.components.contacts', [])
     .component('contactsComponent', contactsComponent)
     .name;
 

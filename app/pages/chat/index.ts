@@ -1,7 +1,8 @@
 import chatPageComponent from './chat.component';
+import './chat.route';
 
 const chatPageModule = angular
-    .module('app.pages.chat', [])
+    .module('chat.pages.chat', [])
     .component('chatPage', chatPageComponent)
     .name;
 
