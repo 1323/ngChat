@@ -4,7 +4,7 @@ import {Component} from './annotations';
     template: require('./app.html')
 })
 export default class AppComponent {
-    $onInit() {
+    public $onInit() {
         console.log('App is ready!');
     }
 }

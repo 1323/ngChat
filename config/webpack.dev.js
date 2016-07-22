@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
@@ -10,16 +11,18 @@ module.exports = webpackMerge(commonConfig, {
     },
     tslint: { failOnHint: false },
     devServer: {
+        contentBase: config.paths.public,
         outputPath: config.paths.public,
         historyApiFallback: true,
         compress: true,
         inline: true,
-        hot: true,
-        port: config.port
+        port: config.port,
+        stats: {colors: true}
     },
     plugins: [
         new OpenBrowserPlugin({
             url: `http://localhost:${config.port}`
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 });

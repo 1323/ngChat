@@ -10,9 +10,9 @@ const config = require('./config');
 module.exports = {
     context: config.paths.app,
     entry : {
-        'app': './index',
-        'vendor': './core/vendor',
-        'styles': glob.sync([
+        app: './index',
+        vendor: './core/vendor',
+        styles: glob.sync([
             './core/app.scss',
             './**/**.scss'
             //register 3rd party styles here
@@ -49,8 +49,8 @@ module.exports = {
         new ExtractTextPlugin(config.cssBundleName),
         new HtmlWebpackPlugin({
             title: 'ngChat',
-            entry: 'index.html',
-            template: 'index.html',
+            entry: 'index.ejs',
+            template: 'index.ejs',
             favicon: 'assets/favicon.ico',
             chunksSortMode: config.sortChunks(['vendor', 'app'])
         }),

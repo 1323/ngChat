@@ -3,7 +3,7 @@ angular.module('chat.routing')
         'ngInject';
 
         $stateProvider.state('app.unrecognized', {
-            url: '/unrecognized',
+            url: '/',
             views: {
                 'main@': {
                     template: '<unrecognized-page></unrecognized-page>'

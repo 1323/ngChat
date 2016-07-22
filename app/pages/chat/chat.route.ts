@@ -1,9 +1,9 @@
 angular.module('chat.routing')
-    .config(($stateProvider: angular.ui.IStateProvider) => {
+    .config(($stateProvider: ng.ui.IStateProvider) => {
         'ngInject';
 
         $stateProvider.state('app.chat', {
-            url: '/',
+            url: '/chat',
             views: {
                 'main@': {
                     template: '<chat-page></chat-page>'

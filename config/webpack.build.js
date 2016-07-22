@@ -22,6 +22,7 @@ module.exports = webpackMerge(commonConfig, {
                 keep_fargs: false
             },
             comments: false
-        })
+        }),
+        new webpack.optimize.DedupePlugin()
     ]
 });

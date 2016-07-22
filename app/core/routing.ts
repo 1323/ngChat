@@ -2,9 +2,9 @@ const routingModule = angular
     .module('chat.routing', [])
     .config(
         (
-            $stateProvider: angular.ui.IStateProvider,
-            $locationProvider: angular.ILocationProvider,
-            $urlRouterProvider: angular.ui.IUrlRouterProvider
+            $stateProvider: ng.ui.IStateProvider,
+            $locationProvider: ng.ILocationProvider,
+            $urlRouterProvider: ng.ui.IUrlRouterProvider
         ) => {
             'ngInject';
 
@@ -17,20 +17,10 @@ const routingModule = angular
 
             $stateProvider
                 .state('app', {
-                    abstract: true,
-                    resolve: {
-                        isRecognided: () => {
-                            return false;
-                        },
-                        controller: (isRecognided: boolean, $state: ng.ui.IStateService) => {
-                            'ngInject';
-
-                            $state.go('app.unrecognized');
-                        }
-                    }
+                    abstract: true
                 });
 
-            $urlRouterProvider.when('', '/')
+            $urlRouterProvider.when('', '/');
         })
     .name;
 
