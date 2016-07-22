@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "postinstall": "typings install",
-    "dev": "webpack --progress --colors --watch --display-error-details --display-reasons --devtool eval --config config/webpack.dev.js",
+    "dev": "webpack-dev-server --config config/webpack.dev.js",
     "build": "webpack --progress --colors --display-error-details --display-reasons -p --config config/webpack.build.js",
     "karma": "node_modules/.bin/karma start config/karma.config.js",
     "test": "npm run karma",
@@ -34,6 +34,7 @@
     "copy-webpack-plugin": "3.0.1",
     "css-loader": "0.23.1",
     "extract-text-webpack-plugin": "1.0.1",
+    "glob-all": "3.0.3",
     "html-loader": "0.4.3",
     "html-webpack-plugin": "2.22.0",
     "jasmine-core": "2.4.1",
