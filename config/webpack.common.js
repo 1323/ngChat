@@ -13,10 +13,10 @@ module.exports = {
         app: './index',
         vendor: './core/vendor',
         styles: glob.sync([
+            //register 3rd party styles here
+            '../node_modules/angular-material/angular-material.css',
             './core/app.scss',
             './**/**.scss'
-            //register 3rd party styles here
-
         ], { cwd: config.paths.app})
     },
     output: {
